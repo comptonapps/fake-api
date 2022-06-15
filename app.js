@@ -13,6 +13,10 @@ app.get('/new', (req, res) => {
     return res.json({new: true});
 });
 
+app.get('/goober', (req, res) => {
+    return res.json({goober: true})
+});
+
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`);
 });
