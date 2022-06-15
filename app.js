@@ -13,6 +13,10 @@ app.get('/new', (req, res) => {
     return res.json({new: true});
 });
 
+app.get('/again', (req, res) => {
+    return res.json({again: true});
+});
+
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`);
 });
