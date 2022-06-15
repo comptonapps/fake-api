@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
     return res.json({foo: true})
 });
 
+app.get('/new', (req, res) => {
+    return res.json({new: true});
+});
+
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`);
 });
